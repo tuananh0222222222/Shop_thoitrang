@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.header {
+  
+}
+.header_top {
+    background-color: #f5f5f5;
+    height: 40px;
+    width: 100%
+    
+}
+
+.header_navbar {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.header_navbar-list {
+    display: flex;
+    list-style: none;
+    line-height: 40px;
+}
+
+.header_navbar-item {
+    padding-left: 0px;
+    margin: 0 10px;
+    
+}
+
+.header_navbar-item--link {
+    text-decoration: none;
+    /* font-family: 'Be Vietnam Pro', sans-serif; */
+    font-weight:600;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #6c6c6c;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 14px;
+}
+
+.header_navbar-item--link:hover {
+    color: var(--money-color);
+}
+
+.header_navbar-item--icon {
+    color: var(--money-color);
+}
+
+.header_navbar-item--icon--like {
+    color: #9c9c9c;
+}
+
+/* container */
+.container {
+    background-image: linear-gradient(to right, #ede4ea ,#e0e8ec ,#dfe4e7);
+    height: 2147px;
+}
+
+
+/* header search */
+.header_mid {
+    display: flex;
+    height: 120px;
+    justify-content: space-around;
+    margin-right: 50px;
+    padding-top: 20px;
+}
+
+.header_logo {
+    display: flex;
+    position: relative;
+}
+
+.header_logo::before {
+    content: "";
+    display: block;
+    height: 62px;
+    width: 2px;
+    background-color: var(--money-color);
+    position: absolute;
+    top: 4px;right: -16px;
+
+}
+
+.header_logo-link {
+    text-decoration: none;
+    color: var(--money-color);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.header_logo-name {
+    font-size: 40px;
+}
+
+.header_logo-des {
+    font-size: 18px;
+    padding-left: 4px;
+}
+
+.header_search {
+  
+    width: 629px;
+    position: relative;
+   
+}
+.header_search-input {
+    
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+    padding: 12px 16px;
+    border-radius: 20px; 
+}
+
+.header_search-submit {
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right,#fd8500,#ff5500);
+    padding: 9px 11px;
+    color: var( --White-color);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    /* font-family: 'Be Vietnam Pro', sans-serif; */
+    cursor: pointer;
+
+
+}
+
+.header_search-kid{
+    
+}
+
+.header_search-kid--item{
+    display: flex;
+    position: absolute;
+    top: 118px;
+    right: 530px;
+}
+
+.header_search-kid--list{
+    list-style: none;
+    font-size: 15px;
+    padding-right: 12px;
+}
+
+.header_search-kid--list a {
+    color: black;
+    text-decoration: none;
+
+}
+.header_search-kid--list a:hover {
+    color: var(--money-color);
+}
+
+/* category */
+
+.category {
+   width: 850px;
+   background-color: var(--White-color);
+    margin-right: 20px;
+    height: 574px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-info {
+    width: 311px;
+    background-color: var(--White-color);
+    height: 574px;
+    border-radius: 25px;
+
+}
+
+.category_name{
+  
+}
+
+.category_title{
+    font-size: 25px;
+    color: var(--money-color);
+  margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.category_list{
+    list-style: none;
+}
+
+.category_item{
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    padding-left: 20px ;
+    padding-right: 5px;
+}
+
+.category_item:hover {
+    background-color: #f4e9e0;
+}
+
+.category_item-link{
+    text-decoration: none;
+}
+
+.category_item-icon {
+    font-size: 10px;
+}
+/* slider */
+.slider {
+    background-color: rgb(148, 148, 160);
+   height: 259px;
+   width: 641px;
+   margin-top: 46px;
+   border-radius: 25px;
+   margin-left: 14px;
+   
+
+}
+.new {
+  margin-left: 200px;
+    top: 53%;
+    right: 34%;
+    display: flex;
+   
+   
+}
+.sales {
+    width: 314px;
+    height: 205px;
+    background-color: var(--money-color);
+}
+
+.new_pro {
+    width: 314px;
+    height: 205px;
+    background-color: var(--money-color);
+}
+
+/* buy hot */
+.buy_hot {
+    height: 407px;
+    background-color: var(--White-color);
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+
+/* prodcut ilke */
+
+.product_like {
+    height:1000px ;
+    background-color: var(--White-color);
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+/* footer */
+.footer {
+    margin-top: 20px;
+}

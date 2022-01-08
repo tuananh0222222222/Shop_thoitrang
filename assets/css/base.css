@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200&family=Lato:wght@300&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200&family=Lato:wght@300&family=Open+Sans&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --White-color : #ffffff;
+    --text-color: #666666; 
+    --money-color:#ff5700;
+
+}
+
+/* gird */
+.grid {
+    width: 1190px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-column-2 {
+    width: 16.6667%;
+}
+.grid-column-3 {
+    width: 20.6667%;
+   
+}
+.grid-column-4 {
+    width:33,334px;
+   
+} 
+.grid-column-8 {
+    width: 66,666%;
+  
+}
+.grid-column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
