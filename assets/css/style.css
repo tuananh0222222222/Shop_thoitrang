@@ -56,7 +56,7 @@
 
 /* container */
 .container {
-    background-image: linear-gradient(to right, #ede4ea ,#e0e8ec ,#dfe4e7);
+    background-image: linear-gradient(to right, #e3d6f6 ,#f3e8e0 ,#dfe4e7);
     height: 2147px;
 }
 
@@ -64,25 +64,34 @@
 /* header search */
 .header_mid {
     display: flex;
-    height: 120px;
-    justify-content: space-around;
+    align-items: center;
+    height: 112px;
     margin-right: 50px;
-    padding-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 23px;
+   
 }
+
+
+  
+
 
 .header_logo {
     display: flex;
     position: relative;
+    padding: 0 29px;
 }
 
 .header_logo::before {
     content: "";
     display: block;
     height: 62px;
-    width: 2px;
+    width: 1px;
     background-color: var(--money-color);
     position: absolute;
-    top: 4px;right: -16px;
+    top: 4px;
+    right: 9px;
 
 }
 
@@ -103,7 +112,7 @@
 }
 
 .header_search {
-  
+  margin-left: 54px;
     width: 629px;
     position: relative;
    
@@ -115,7 +124,7 @@
     border: none;
     font-weight: 600;
     outline: none;
-    font-size: 16px;
+    font-size: 15px;
     color: #000;
     padding: 12px 16px;
     border-radius: 20px; 
@@ -123,8 +132,8 @@
 
 .header_search-submit {
     position: absolute;
-    right: 7px;
-    top: 5px;
+    right: -26px;
+    top: 4px;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -146,8 +155,9 @@
 .header_search-kid--item{
     display: flex;
     position: absolute;
-    top: 118px;
-    right: 530px;
+    top: 50px;
+    left: 20px;
+  
 }
 
 .header_search-kid--list{
@@ -159,6 +169,7 @@
 .header_search-kid--list a {
     color: black;
     text-decoration: none;
+    font-size: 14px;
 
 }
 .header_search-kid--list a:hover {
@@ -167,111 +178,105 @@
 
 /* category */
 
-.category {
-   width: 850px;
-   background-color: var(--White-color);
-    margin-right: 20px;
-    height: 574px;
-    border-radius: 25px;
+.category{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-.user-info {
-    width: 311px;
+.category_Cate{
+    width: 863px;
+    height: 570px;
     background-color: var(--White-color);
-    height: 574px;
     border-radius: 25px;
 
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+     padding-right: 22px;
+   
+          
+
 }
 
-.category_name{
-  
+
+.category_Cate {
+   
+}
+.category_list{
+    
+    width: 175px;
+    list-style: none;
+    grid-row: 1/4;
 }
 
-.category_title{
+.category_title {
     font-size: 25px;
     color: var(--money-color);
-  margin-bottom: 20px;
+    padding: 10px 0;
     text-align: center;
-    margin-top: 10px;
+}
+.category_items {
+   
     
 }
 
-.category_list{
-    list-style: none;
-}
-
-.category_item{
-    margin-right: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.category_items:hover {
+    background-color: #f7b2b2;
     cursor: pointer;
-    padding: 10px 0;
-    padding-left: 20px ;
-    padding-right: 5px;
 }
-
-.category_item:hover {
-    background-color: #f4e9e0;
-}
-
-.category_item-link{
-    text-decoration: none;
-}
-
-.category_item-icon {
+.category_icon {
     font-size: 10px;
 }
-/* slider */
-.slider {
-    background-color: rgb(148, 148, 160);
-   height: 259px;
-   width: 641px;
-   margin-top: 46px;
-   border-radius: 25px;
-   margin-left: 14px;
-   
 
-}
-.new {
-  margin-left: 200px;
-    top: 53%;
-    right: 34%;
+.category_item-link {
     display: flex;
-   
-   
-}
-.sales {
-    width: 314px;
-    height: 205px;
+    justify-content: space-between ;
+    align-items: center;
+    padding:10px 15px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+
+} 
+
+.category_slider{
+    grid-column: 2/4;
+    width: 643px;
+    height: 263px;
     background-color: var(--money-color);
-}
-
-.new_pro {
-    width: 314px;
-    height: 205px;
-    background-color: var(--money-color);
-}
-
-/* buy hot */
-.buy_hot {
-    height: 407px;
-    background-color: var(--White-color);
-    margin-top: 20px;
+    margin-top: 44px;
     border-radius: 25px;
+    overflow: hidden;
+}
+.slider_img {
+    height: 100%;
+    object-fit: cover;
 }
 
+.category_new{
+  height: 202px;
+  width: 318px;
+  background-color: violet;
+  border-radius: 25px;
 
-/* prodcut ilke */
+}
 
-.product_like {
-    height:1000px ;
+.category_sales{
+    height: 202px;
+  width: 318px;
+  background-color: rgb(219, 1, 219);
+  border-radius: 25px;
+
+
+}
+/* cate user */
+.category_user{
+    width: 312px;
+    height: 570px;
     background-color: var(--White-color);
     border-radius: 25px;
-    margin-top: 20px;
+    margin-left: 20px;
 }
+
+
 
 /* footer */
 .footer {
